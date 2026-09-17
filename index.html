@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWeb - Modern Solutions</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for mobile hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">My<span>Web</span></a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-item active">Home</a>
+                <a href="#features" class="nav-item">Features</a>
+                <a href="#about" class="nav-item">About Us</a>
+                <a href="#services" class="nav-item">Services</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+
+            <!--icons--> 
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content  -->
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to <span class="highlight">MyWeb</span></h1>
+                <p>We build simple, fast and modern web applications.</p>
+                <a href="#features" class="btn">Explore Features</a>
+            </div>
+        </section>
+
+        <!-- Features  -->
+        <section id="features" class="section alt-bg">
+            <div class="container">
+                <h2>Our Core Features</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <i class="fas fa-mobile-alt card-icon"></i>
+                        <h3>Fully Responsive</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, delectus!</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-bolt card-icon"></i>
+                        <h3>Fast Performance</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, facere!</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-paint-brush card-icon"></i>
+                        <h3>Dynamic UI</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, optio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About MyWeb</h2>
+                <p class="section-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quasi, accusantium libero ducimus eius asperiores dolor nulla iusto vel voluptatibus delectus similique sed id consequuntur. Deserunt facilis aspernatur veritatis itaque!. 
+                   
+                </p>
+            </div>
+        </section>
+
+        <!-- Services  -->
+        <section id="services" class="section alt-bg">
+            <div class="container">
+                <h2>Services Provided</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, totam?</p>
+                    </div>
+                    <div class="card">
+                        <h3>UI/UX Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aperiam.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Optimization</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quasi?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>Interested in working with us? Send a message below.</p>
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MyWeb. All rights reserved.</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
